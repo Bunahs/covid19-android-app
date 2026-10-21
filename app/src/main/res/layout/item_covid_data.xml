@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center_vertical">
+
+    <!-- Quốc kỳ -->
+    <ImageView
+        android:id="@+id/idIVCountryFlag"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/flag_placeholder"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Tên Quốc Gia -->
+        <TextView
+            android:id="@+id/idTVCountryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Tên Quốc Gia"/>
+
+        <!-- Tổng Ca -->
+        <TextView
+            android:id="@+id/idTVCases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng Ca: 0"
+            android:textColor="#FF5722"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Ca Mới -->
+        <TextView
+            android:id="@+id/idTVTodayCases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tử vong: 0"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Tử Vong -->
+        <TextView
+            android:id="@+id/idTVDeaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hồi phục: 0"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Hồi Phục -->
+        <TextView
+            android:id="@+id/idTVRecovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ca mới: 0"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+</LinearLayout>
